@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+
+<table width="300" border="0" align="center">
+  <tr>
+    <td>
+		&lt;!@session_reg sessionvalue=hhh&gt;<!@session_reg sessionvalue=hhh>
+		<br>
+		&lt;!@session_reg sessionvalue1=gg&gt;<!@session_reg sessionvalue1=gg>
+		<br>
+		&lt;!@session_reg sessionvalue2="우헤헤"&gt;<!@session_reg sessionvalue2="우헤헤">
+		<br>
+		&lt;!@session_reg sessionvalue2="따옴표도된다"&gt;<!@session_reg sessionvalue2="따옴표도 된다">
+		<br>
+		<a href="session1.sod">자 다음파일에서 유지되는지 보자</a>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>

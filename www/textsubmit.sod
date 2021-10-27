@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+
+<table width="300" border="0" align="center">
+<form name="testinput" action="textsubmit1.sod?gettest=haha" method="post">
+  <tr>
+    <td>
+		<input type="text" name="testtext[]">
+		<input type="text" name="testtext[]">
+		<input type="text" name="testtext[]">
+		<input type="text" name="testtext[]">
+		<input type="text" name="testt">
+		<input type="submit" value="자 넘겨보자">
+    </td>
+  </tr>
+</form>
+</table>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>

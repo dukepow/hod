@@ -1,0 +1,140 @@
+<head>
+<title>TG dukepow HomePage<!@title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<!@java_board>
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+<table width="795" border="0" cellspacing="0" cellpadding="0" align=center>
+  <tr>
+    <td> 
+      <table width="795" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <table width="795" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+              	<td width=3></td>
+                <td height="29" background="b_img/title_bg.gif" width="160">&nbsp;</td>
+                <td background="b_img/title_bg.gif" width="23">&nbsp;</td>
+                <td background="b_img/title_bg.gif" width=""><b><font color="#FFFFFF" size="2"><!@B_TITLE></font></b></td>
+                <td background="b_img/title_bg.gif" width="279"><b><font color="#FFFFFF" size="2"><!@B_WRITEDAYTIME>&nbsp;
+                 Views : <!@B_READNUM></font></b></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="3"></td>
+        </tr>
+        <tr>
+          <td background="b_img/view_bg3.gif">
+            
+            <!@B_TROPEN trsize=all&bgcolor=#FFFFFF|#E9EEF2&trview=this>
+            <table width="795" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>
+                  <table width="795" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="161" valign="top"> 
+                        <table width="161" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td height="32">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td height="124"> 
+                              <div align="center">
+                             <!@B_CLASS src=회원|회원|회원|회원|회원|회원|회원|회원|회원|회원>
+                             <br>
+                              <#B_MEMICON width=100&height=100><br><!@B_YP>
+                              <br><!@B_WRITERLINK type=id&linkheight=16&skin=reefmind></div>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>&nbsp;</td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top"> 
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td height="32" colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td width="22">&nbsp;</td>
+                            <td width="612"><!@B_CONTENTS>
+							<!@B_PREVIEWA tablewidth=600&multi=on&guest=yes&link=board_view.sod>
+							<!@B_PREVIEW tablewidth=600&multi=on&guest=yes&link=board_view.sod></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td background="b_img/view_bg4.gif"> 
+                  <table width="795" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="161" height="26"> 
+                        <div align="center"><font size="2" color="424243"><!@B_WRITEDAYTIME></font></div>
+                      </td>
+                      <td>
+                      <!@IFOPEN session_board==1>
+          				<#B_WRITEIP>
+          			<!@IFCLOSE>
+          			<b>&nbsp;&nbsp;첨부파일 : <!@B_DOWNLOAD></b><br></td>
+                      <td align="right"> 
+                        <table width="100" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><!@B_DEL type=prompt&src=b_img/del.jpg&guest=yes></td>
+                            <td align=right><!@B_EDIT link=board_cedit.sod&src=b_img/modefy.gif&guest=yes></td>
+                          </tr>
+                        </table><br>이전글: <!@b_titleaback link=board_view.sod>
+						<br>다음글: <!@b_titleanext link=board_view.sod>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!@B_TRCLOSE>
+          </td>
+        </tr>
+        <tr>
+        	<td>
+        	<br>
+            <table width="795" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td bgcolor="#FFFFFF" width="31">&nbsp;</td>
+                <td bgcolor="#FFFFFF" align="right"><!@B_BACK src=images/b_back.gif><!@B_NEXT src=images/b_next.gif> 
+				<!@B_LIST src=images/b_list.gif&link=board_list.sod> <!@B_REPLY link=board_creply.sod&src=b_img/re.gif&guest=yes> <!@B_WRITE src=b_img/write.gif&guest=yes&link=board_cwrite.sod></td>
+              </tr>
+            </table>
+            </td>
+         </tr>
+      </table>
+      <br>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>
+

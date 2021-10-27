@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+
+<table width="300" border="0" align="center">
+  <tr>
+    <td><!@_POST ggg>
+		testtext[0]<input type="text" name="testtext" value="<!@_POST testtext[0]>"><br>
+		testtext[1]<input type="text" name="testtext" value="<!@_POST testtext[1]>"><br>
+		testtext[2]<input type="text" name="testtext" value="<!@_POST testtext[2]>"><br>
+		testtext[3]<input type="text" name="testtext" value="<!@_POST testtext[3]>"><br>
+		testt<input type="text" name="testtext1" value="<!@_POST testt>">
+		<br>get으로 넘어온 gettest=<!@_POST gettest>
+		<br>잘 나오는것을 확인했으니<br> <a href="/main.sod">홈으로</a>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>

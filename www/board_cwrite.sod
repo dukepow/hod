@@ -1,0 +1,166 @@
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<!@java_board>
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!@B_FWRITE>
+  <tr>
+    <td>
+      <table width="708" border="0" cellspacing="0" cellpadding="0" align=center>
+        <tr>
+          <td colspan="4">
+            <table width="708" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="25" background="b_img/write_bg.gif">&nbsp;</td>
+                <td width="96"><img src="b_img/top_write.gif" width="96" height="25"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr>
+          <td><img src="b_img/subject.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2">
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="title" type="text" size="98">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr>
+          <td><img src="b_img/link1.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp; </td>
+          <td bgcolor="F0F2F2">
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;" name="homepage" type="text" size="60">&nbsp;&nbsp;<!@B_NEWS>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr> 
+          <td><img src="b_img/writer.jpg" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2"> 
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="name" type="text" size="20">
+          </td>
+        </tr>
+        <tr> 
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr> 
+          <td><img src="b_img/pass.jpg" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2"> 
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="pwd" type="password" size="20">
+          </td>
+        </tr>
+        <tr>
+          <td height="265" bgcolor="F8FAF9" valign="middle" align="center"><img src="b_img/memo.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td valign="top" bgcolor="F0F2F2">
+	  <!@b_imocontents width=100%&height=400>
+          <!--<textarea name=contents cols=82 rows=20></textarea>-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr>
+          <td><img src="b_img/upload1.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2">
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="filename[]" type="file" size="67" >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr>
+          <td><img src="b_img/upload2.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2">
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="filename[]" type="file" size="67" >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr>
+          <td><img src="b_img/upload3.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2">
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="filename[]" type="file" size="67" >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="2"></td>
+        </tr>
+        <tr>
+          <td><img src="b_img/upload4.gif" width="88" height="21"></td>
+          <td width="2">&nbsp;</td>
+          <td bgcolor="F0F2F2">&nbsp;</td>
+          <td bgcolor="F0F2F2">
+            <input style="border:solid 1px ;font-size:9pt;border-width:1;border-color:856112;"
+				  name="filename[]" type="file" size="67" >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="26">
+            <table width="628" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+                <td width="70"></td>
+                <td width="3">&nbsp;</td>
+                <td width="70"><!@B_SUBMIT src=b_img/ok.gif&guest=yes></td>
+                <td width="3">&nbsp;</td>
+                <td width="70"><!@B_LIST src=b_img/w_cancel.gif></td>
+                <td width="4">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<!@B_FCLOSE>
+</table>
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+<table width="800" border="0" cellspacing="0" cellpadding="0" align=center>
+  <tr>
+    <td>
+      
+      <!@THUMB_START dir=j:\dukepow\2010_source\hod\내그림&mask=*.jpg|*.gif|*.jpeg|*.png>
+      <table width="800" border="0" cellspacing="1" cellpadding="0">
+      <!@THUMB_TROPEN trsize=5&bgcolor=#FFFFFF|#E9EEF2>
+        <tr bgcolor="<!@THUMB_BGCOLOR>"> 
+          <td width="260" height="28" valign="middle"> 
+            <div align="center"><font size="2"><!@THUMB_NAME fullpath=true></font></div>
+	    <!@THUMB_PREVIEW tablewidth=260&multi=off&guest=yes>
+	    <font size="2"><!@THUMB_DAYTIME></font>
+	  </td>
+          <td width="260"><div align="center"><font size="2"><!@THUMB_NAME fullpath=true></font></div>
+	    <!@THUMB_PREVIEW tablewidth=260&multi=off&guest=yes>
+	    <font size="2"><!@THUMB_DAYTIME></font>
+          </td>
+          <td width="260"> 
+            <div align="center"><font size="2"><!@THUMB_NAME fullpath=true></font></div>
+	    <!@THUMB_PREVIEW tablewidth=260&multi=off&guest=yes>
+	    <font size="2"><!@THUMB_DAYTIME></font>
+          </td>
+        </tr> 
+	  <!@THUMB_TRCLOSE>
+      </table>
+
+      <table width="795" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="18" colspan="4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td align="right" colspan="4"><font size="2" color="15485D"><b><!@thumb_trpage></b></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>

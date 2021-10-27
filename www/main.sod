@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!@incfile src=topbar.sod>
+<br>
+<br>
+<table align="center">
+	<tr><td>
+<table width="300" border="1" align="center" cellpadding="3" cellspacing="3" bordercolor="#00CCFF" bgcolor="#FFFFFF">
+  <tr>
+    <td colspan="2"><img src="/IMG_0069(6164).jpg" width="400" height="334"></td>
+  </tr>
+  <tr>
+    <td width="72"><div align="center"><img src="pagerror.gif" width="36" height="48"></div></td>
+    <td width="317"><div align="center">제민이의 홈페이지가 만들어 지고 있습니다.<br>
+  차후 많은 관심 바랍니다. <br><a href="happybreak.sod">HappyBreak</a></div></td>
+  </tr>
+</table>
+</td><td>
+<table width="400" border="0" align="center">
+  <tr>
+	<td>PHP SOD 엔진을 Delphi ISAPI 로 만들어 보자
+	(시작일 : 2005.08.09)
+	</td>
+  </tr>
+  <tr>
+    <td>1. SOD 확장자를 등록해본다(iis 에 isapi 로 .sod 등록)<br>
+	2. !@incfile 추가 (all 적용) 2005.08.09<br>
+    <a href="textsubmit.sod">3. text post 값을 받아 들이자(textsubmit) 2005.08.10</a><br>
+	<a href="imgsubmit.sod">4. 그림을 올려보자(imgsubmit) 2005.08.10</a><br>
+	<a href="session.sod">5. 세션을 설정하자(session) 2005.08.10</a><br>
+	<a href="session.sod">*. FormData 모두 수정 2005.08.13-2005.08.16</a><br>
+	<a href="/install/">6. 셋업을 만들자(config) 2005.08.13-</a><br>
+	<a href="/install/">*. 데이터베이스 생성</a><br>
+	7. 게시판을 만들어 보자 2005.09.13-<br>
+	<a href="/board/gonggi.sod">*. 공지사항 표기 </a><br>
+	<a href="/board_list.sod">*. 공지사항 게시판 </a><br> 
+        <a href="/thumblist.sod">7. thumbnail 리스트</a><br>
+    </td>
+  </tr>
+</table>
+</td></tr></table>
+<table align=center border=1 cellpadding="3" cellspacing="3" bordercolor="#00CCFF" bgcolor="#FFFFFF">
+	<tr>
+		<td>테그명
+		</td>
+		<td>파라메타
+		</td>
+		<td>설명
+		</td>
+		<td>출력
+		</td>
+	</tr>
+	<tr>
+		<td>!@incfile
+		</td>
+		<td>파일명
+		</td>
+		<td>파일명을 읽어들여 삽입시킨다.
+		</td>
+		<td>파일 소스
+		</td>
+	</tr>
+	<tr>
+		<td>!@_post
+		</td>
+		<td>폼변수명
+		</td>
+		<td>폼데이터의 변수명의 값을 출력한다
+		</td>
+		<td>폼데이터의 변수명의 값
+		</td>
+	</tr>
+	<tr>
+		<td>!@_value
+		</td>
+		<td>변수명
+		</td>
+		<td>변수명의 값을 출력한다
+		</td>
+		<td>변수명의 값
+		</td>
+	</tr>
+	<tr>
+		<td>!@copy
+		</td>
+		<td>name=파일변수명 dir=저장위치
+		</td>
+		<td>업로드한 파일을 원하는 위치에 저장한다
+		</td>
+		<td>nil
+		</td>
+	</tr>
+	<tr>
+		<td>!@session_reg
+		</td>
+		<td>변수명=값
+		</td>
+		<td>변수명의 값을 세션으로 저장해놓는다
+		</td>
+		<td>nil
+		</td>
+	</tr>
+	<tr>
+		<td>!@ifopen , !@ifclose
+		</td>
+		<td>변수명=값,변수명!=값,변수명!G값,변수명!L값
+		</td>
+		<td>변수값과 전달값을 비교해서 ifclose 까지를 처리한다
+		</td>
+		<td>묶음
+		</td>
+	</tr>
+	<tr>
+		<td>!@gonggi_title
+		</td>
+		<td>(v=번째글 : n=절대글) writeday=true bname=gonggi viewer=/board.sod textsize=40
+		[reply=true] [newicon] [src] [target=newwin]
+		</td>
+		<td>공지사항을 표기한다
+		</td>
+		<td>묶음
+		</td>
+	</tr>
+</table>
+<table align=center border=1 cellpadding="3" cellspacing="3" bordercolor="#00CCFF" bgcolor="#FFFFFF">
+	<tr>
+		<td>테그명
+		</td>
+		<td>내용
+		</td>
+		<td>테그명
+		</td>
+		<td>내용
+		</td>
+	</tr>
+	<tr>
+		<td>!@home_url
+		</td>
+		<td>홈페이지 도메인(<!@home_url>)
+		</td>
+		<td>!@documentroot
+		</td>
+		<td>DOCUMENTROOT(<!@documentroot>)
+		</td>
+	</tr>
+	<tr>
+		<td>!@sod_path
+		</td>
+		<td>SOD 엔진 경로(<!@sod_path>)
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<!@incfile src=buttombar.sod>
+</body>
+</html>

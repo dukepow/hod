@@ -1,0 +1,129 @@
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<table width="95%" border="1" align="center" bgcolor="#CC99FF">
+  <tr>
+    <td width="141">Last updated 2005.08.16</td>
+    <td>&nbsp;</td>
+    <td width="200"><div align="right"><a href="/">Jemin &amp; TG dukepow HomePage</a> </div></td>
+  </tr>
+</table>
+
+<br>
+<br>
+<table width="795" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="795" border="0" cellspacing="1" cellpadding="0" align="center" bgcolor="07436A">
+        <tr> 
+          <td height="28" width="59" background="b_img/title_bg.gif"> 
+            <table width="59" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="16">&nbsp;</td>
+                <td width="28"><img src="b_img/no.gif" width="28" height="29"></td>
+                <td width="15">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td height="29" width="330" background="b_img/title_bg.gif"> 
+            <table width="330" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="14">&nbsp;</td>
+                <td width="59"><img src="b_img/thread.gif" width="59" height="29"></td>
+                <td width="257">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td height="29" width="75" background="b_img/title_bg.gif"> 
+            <table width="75" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="62"><img src="b_img/replies.gif" width="62" height="29"></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td height="29" width="126" background="b_img/title_bg.gif"> 
+            <table width="126" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="b_img/t_starter.gif" width="117" height="29"></td>
+                <td width="9">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td height="29" width="138" background="b_img/title_bg.gif"> 
+            <table width="138" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="45">&nbsp;</td>
+                <td width="44"><img src="b_img/time.gif" width="44" height="29"></td>
+                <td width="49">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td height="29" width="57" background="b_img/title_bg.gif"> 
+            <table width="57" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="b_img/views.gif" width="50" height="29"></td>
+                <td width="7">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--잘못된위치-->
+      <table width="795" border="0" cellspacing="1" cellpadding="0">
+      <!--b_trstart-->
+	  <!--b_trend-->
+      </table>
+      <table width="795" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="18" colspan="4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td align="right" colspan="4"><font size="2" color="15485D"><b><#B_TRPAGE></b></font></td>
+        </tr>
+        <tr> 
+          <td align="right" width="766" valign="middle"><#B_WRITE src=b_img/write.gif&guest=yes></td>
+          <td width="2">&nbsp;</td>
+          <td width="140" align="right" valign="top"><#B_SEARCH></td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<table width="95%" border="1" align="center" bgcolor="#CC99FF">
+  <tr>
+    <td width="106">used SOD Engine</td>
+    <td align="right"><div align="right">Copyright ⓒ 21cbiz All Rights Reserved.</div></td>
+    <td width="170" align="right"><a href="javascript:wopen('http://counter.linkuser.com/dayview.php?b=dukepow');"><img src="http://counter.linkuser.com/counter.php?b=dukepow&m=10" border=0></a></td>
+  </tr>
+</table>
+<script language="JavaScript">
+<!--
+function wopen(uuu) {
+		window.open(uuu, "mail_window", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+	}
+//-->
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<HTML>
+	<HEAD>
+		<TITLE>vol3_beer</TITLE>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr" />
+		<style type="text/css">
+			<!--
+			body {
+				margin-left: 0px;
+				margin-top: 0px;
+				background-color: #FFCC00;
+			}
+			-->
+		</style>
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+	</HEAD>
+	<BODY BGCOLOR="#FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+		<!-- ImageReady Slices (vol3_beer.psd) -->
+		<TABLE WIDTH="1000" BORDER="0" CELLPADDING="0" CELLSPACING="0" align="center">
+			<TR>
+				<TD> <IMG SRC="images/index_01.jpg" WIDTH="207" HEIGHT="63" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_02.jpg" WIDTH="310" HEIGHT="63" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_03.jpg" WIDTH="348" HEIGHT="63" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_04.jpg" WIDTH="135" HEIGHT="63" ALT="" /></TD>
+			</TR>
+			<TR>
+				<TD> <IMG SRC="images/index_05.jpg" WIDTH="207" HEIGHT="23" ALT="" /></TD>
+				<TD width="310" height="23" background="images/index_06.jpg"> <!@GONGGI_TITLE v=1&writeday=true&bname=gonggi&viewer=/board_view.sod&textsize=40></TD>
+				<TD> <IMG SRC="images/index_07.jpg" WIDTH="348" HEIGHT="23" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_08.jpg" WIDTH="135" HEIGHT="23" ALT="" /></TD>
+			</TR>
+			<TR>
+				<TD> <IMG SRC="images/index_09.jpg" WIDTH="207" HEIGHT="117" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_10.jpg" WIDTH="310" HEIGHT="117" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_11.jpg" WIDTH="348" HEIGHT="117" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_12.jpg" WIDTH="135" HEIGHT="117" ALT="" /></TD>
+			</TR>
+			<TR>
+				<TD> <IMG SRC="images/index_13.jpg" WIDTH="207" HEIGHT="90" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_14.jpg" WIDTH="310" HEIGHT="90" ALT="" /></TD>
+				<TD>
+					<a href="/main.sod"><IMG SRC="images/index_15.jpg" WIDTH="348" HEIGHT="90" ALT="" border="0" /></a
+				></TD>
+				<TD> <IMG SRC="images/index_16.jpg" WIDTH="135" HEIGHT="90" ALT="" /></TD>
+			</TR>
+			<TR>
+				<TD> <IMG SRC="images/index_17.jpg" WIDTH="207" HEIGHT="165" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_18.jpg" WIDTH="310" HEIGHT="165" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_19.jpg" WIDTH="348" HEIGHT="165" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_20.jpg" WIDTH="135" HEIGHT="165" ALT="" /></TD>
+			</TR>
+			<TR>
+				<TD> <IMG SRC="images/index_21.jpg" WIDTH="207" HEIGHT="142" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_22.jpg" WIDTH="310" HEIGHT="142" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_23.jpg" WIDTH="348" HEIGHT="142" ALT="" /></TD>
+				<TD> <IMG SRC="images/index_24.jpg" WIDTH="135" HEIGHT="142" ALT="" /></TD>
+			</TR>
+		</TABLE>
+		<!-- End ImageReady Slices -->
+	</BODY>
+</HTML>

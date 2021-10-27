@@ -1,0 +1,19 @@
+        <tr bgcolor="<#B_BGCOLOR>"> 
+          <td width="59" height="28" valign="middle"> 
+            <div align="center"><font size="2"><#B_NUM></font></div>
+          </td>
+          <td width="360">&nbsp;&nbsp;<font size="2"><#B_TITLEA newicon=images/new.gif&guest=yes&renewicon=images/re.gif></font>
+          </td>
+          <td width="45"> 
+            <div align="center"><font size="2"><#B_RECOUNT></font></div>
+          </td>
+          <td width="126"> 
+            <div align="center"><font size="2"><#B_WRITERLINK type=id&linkheight=16&skin=reefmind></font></div>
+          </td>
+          <td width="138"> 
+            <div align="center"><font size="2"><#B_WRITEDAYTIME></font></div>
+          </td>
+          <td width="57"> 
+            <div align="center"><font size="2"><#B_READNUM></font></div>
+          </td>
+        </tr> 

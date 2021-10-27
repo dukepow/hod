@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>TG dukepow HomePage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: #FFCC00;
+}
+-->
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br> 
+<!@incfile topbar.sod>
+<br>
+<br>
+
+<table width="300" border="0" align="center">
+  <tr>
+    <td>
+		세션값
+		1.sessionvalue : <!@_value sessionvalue><br>
+		2.sessionvalue1 : <!@_value sessionvalue1><br>
+		3.sessionvalue2 : <!@_value sessionvalue2><br>
+		<br>잘 나오는것을 확인했으니<br> <a href="/">홈으로</a>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<!@incfile buttombar.sod>
+</body>
+</html>
