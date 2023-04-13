@@ -1,6 +1,6 @@
 <head>
 <title>TG dukepow HomePage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -57,7 +57,7 @@ body {
           <td colspan="4" height="2"></td>
         </tr>
         <tr> 
-          <td>ÀÛ¼ºÀÚ</td>
+          <td>ì‘ì„±ì</td>
           <td width="2">&nbsp;</td>
           <td bgcolor="F0F2F2">&nbsp;</td>
           <td bgcolor="F0F2F2"> 
@@ -68,7 +68,7 @@ body {
           <td colspan="4" height="2"></td>
         </tr>
         <tr> 
-          <td>ÆĞ½º¿öµå</td>
+          <td>íŒ¨ìŠ¤ì›Œë“œ</td>
           <td width="2">&nbsp;</td>
           <td bgcolor="F0F2F2">&nbsp;</td>
           <td bgcolor="F0F2F2"> 

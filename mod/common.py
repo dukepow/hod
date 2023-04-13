@@ -1,8 +1,11 @@
+import sys, os  #noqa
+# print(os.path.abspath(os.path.dirname(__file__)))
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+import UJlib as ujlib  #noqa
 import urllib.request
-import mod.UJlib as ujlib
 import mimetypes
 from urllib.parse import urlparse
-import os
 
 mimetypes.init()
 

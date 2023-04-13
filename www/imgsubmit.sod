@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>TG dukepow HomePage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -25,11 +25,11 @@ body {
 <form name="testinput" action="imgsubmit1.sod" method="post" enctype="multipart/form-data">
   <tr>
     <td>
-		¿Ã∞« file<input type="file" name="filenam1">
+		Ïù¥Í±¥ file<input type="file" name="filenam1">
 		<input type="file" name="lolo[]">
 		<input type="file" name="lolo[]">
-		¿Ã∞« text<input type="text" name="filename">
-		<input type="submit" value="¿⁄ ≥—∞‹∫∏¿⁄">
+		Ïù¥Í±¥ text<input type="text" name="filename">
+		<input type="submit" value="Ïûê ÎÑòÍ≤®Î≥¥Ïûê">
     </td>
   </tr>
 </form>

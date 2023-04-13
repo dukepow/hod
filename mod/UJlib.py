@@ -11,6 +11,18 @@ import json
 import shutil
 import progressbar
 
+cnstequal : str = '=='
+cnstNotequal : str = '!='
+cnstLeftBig : str = '!G'
+cnstRightBig : str = '!L'
+CRLF : str = '\r\n'
+CONSTSL : str = '|_#%#_|'
+CONSTSP : str = '|_|%|_|'
+
+
+def explode(src : str, spli: str,idx = 0):
+    v = src.split(spli)
+    return v[idx]
 
 def get_dictlist_findidx(dictlist, fkey):
     """idx 를 찾아줌   이런형식 [{'11': 100},,,]"""
@@ -259,3 +271,9 @@ def ExtractFileExt(filename):
 
 def FileExists(filename):
     return os.path.isfile(filename)
+
+"""------------------------ 윈도우디렉토리를 정확히한다  -----------------------------"""
+def WindowsDirFixup(APath:str)->str:
+    APath = APath.replace('/','\\')
+    APath = APath.replace('\\\\','\\')
+    return APath

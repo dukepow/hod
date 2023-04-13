@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>TG dukepow HomePage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -29,8 +29,8 @@ body {
 		testtext[2]<input type="text" name="testtext" value="<!@_POST testtext[2]>"><br>
 		testtext[3]<input type="text" name="testtext" value="<!@_POST testtext[3]>"><br>
 		testt<input type="text" name="testtext1" value="<!@_POST testt>">
-		<br>getÀ¸·Î ³Ñ¾î¿Â gettest=<!@_POST gettest>
-		<br>Àß ³ª¿À´Â°ÍÀ» È®ÀÎÇßÀ¸´Ï<br> <a href="/main.sod">È¨À¸·Î</a>
+		<br>getìœ¼ë¡œ ë„˜ì–´ì˜¨ gettest=<!@_POST gettest>
+		<br>ì˜ ë‚˜ì˜¤ëŠ”ê²ƒì„ í™•ì¸í–ˆìœ¼ë‹ˆ<br> <a href="/main.sod">í™ˆìœ¼ë¡œ</a>
     </td>
   </tr>
 </table>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>TG dukepow HomePage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -28,11 +28,11 @@ body {
 		<br>
 		&lt;!@session_reg sessionvalue1=gg&gt;<!@session_reg sessionvalue1=gg>
 		<br>
-		&lt;!@session_reg sessionvalue2="¿ìÇìÇì"&gt;<!@session_reg sessionvalue2="¿ìÇìÇì">
+		&lt;!@session_reg sessionvalue2="ìš°í—¤í—¤"&gt;<!@session_reg sessionvalue2="ìš°í—¤í—¤">
 		<br>
-		&lt;!@session_reg sessionvalue2="µû¿ÈÇ¥µµµÈ´Ù"&gt;<!@session_reg sessionvalue2="µû¿ÈÇ¥µµ µÈ´Ù">
+		&lt;!@session_reg sessionvalue2="ë”°ì˜´í‘œë„ëœë‹¤"&gt;<!@session_reg sessionvalue2="ë”°ì˜´í‘œë„ ëœë‹¤">
 		<br>
-		<a href="session1.sod">ÀÚ ´ÙÀ½ÆÄÀÏ¿¡¼­ À¯ÁöµÇ´ÂÁö º¸ÀÚ</a>
+		<a href="session1.sod">ì ë‹¤ìŒíŒŒì¼ì—ì„œ ìœ ì§€ë˜ëŠ”ì§€ ë³´ì</a>
     </td>
   </tr>
 </table>

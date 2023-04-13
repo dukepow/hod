@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>TG dukepow HomePage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -21,8 +21,8 @@ body {
 <br>
 <br>
 
+<form name="testinput" action="textsubmit1.sod" method="post">
 <table width="300" border="0" align="center">
-<form name="testinput" action="textsubmit1.sod?gettest=haha" method="post">
   <tr>
     <td>
 		<input type="text" name="testtext[]">
@@ -30,11 +30,11 @@ body {
 		<input type="text" name="testtext[]">
 		<input type="text" name="testtext[]">
 		<input type="text" name="testt">
-		<input type="submit" value="ÀÚ ³Ñ°Üº¸ÀÚ">
+		<input type="submit" value="ìž ë„˜ê²¨ë³´ìž">
     </td>
   </tr>
-</form>
 </table>
+</form>
 <br>
 <br>
 

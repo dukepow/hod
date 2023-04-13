@@ -8,6 +8,7 @@ import mod.UJlib as ujlib
 class myHandler(BaseHTTPRequestHandler):
 
     stop_server = 0
+    base_url = "http://127.0.0.1:8070"
     base_directory = "./www"   # not add /
     stop_command = "/shutdown"
     reboot_command = "/reboot"
@@ -27,17 +28,17 @@ class myHandler(BaseHTTPRequestHandler):
         return None
 
     # POST형식의 form 데이터를 파싱한다.
-    def __get_Post_Parameter(self, key):
+    def __get_Post_Parameter(self, key, idx = 0):
         # 해당 클래스에 __post_param변수가 선언되었는지 확인한다.
         if hasattr(self, "_myHandler__post_param") == False:
             # 해더로 부터 formdata를 가져온다.
             data = self.rfile.read(int(self.headers['Content-Length']))
             if data is not None:
-                self.__post_param = dict(urlparse.parse_qs(data.decode()))
+                self.__post_param = dict(urlparse.parse_qs(data.decode('utf-8')))
             else:
                 self.__post_param = {}
         if key in self.__post_param:
-            return self.__post_param[key][0]
+            return self.__post_param[key][idx]
         return None
 
     # http 프로토콜의 header 내용을 넣는다.
@@ -54,10 +55,11 @@ class myHandler(BaseHTTPRequestHandler):
         #response.write(b"<html><body><form method='post'><input type='text' name='test' value='hello'><input type='submit'></form></body></html>");
         # self.wfile.write(response.getvalue());
         # data(string)를 byte형식으로 변환해서 응답한다.
-        self.wfile.write(data.encode('utf-8'))
+        self.wfile.write(bytes(data.encode('utf-8')) if data else b"Hello" )
 
-    # POST 형식의 request일 때 호출된다.
+    # get 형식의 request일 때 호출된다.
     def do_GET(self):
+        # print(self.headers)
         if self.path == "/":
             response = io.FileIO(myHandler.base_directory + '/index.sod', mode='r')
             # response = io.BytesIO(f)
@@ -68,21 +70,24 @@ class myHandler(BaseHTTPRequestHandler):
             self.wfile.write(response.read())
         elif self.path == myHandler.stop_command:
             # 서버 죽이기
-            self.__set_Header(200)
-            body = "서버를 종료합니다"
-            self.__set_Body(body)
+            self.send_error(403, "ShutDown Server!", myHandler.base_url + self.path)
             myHandler.stop_server = 4
         elif self.path == myHandler.reboot_command:
             # 서버 죽이기
             self.__set_Header(200)
-            body = "서버를 종료합니다"
-            self.__set_Body(body)
+            self.__set_Body('<a href="' + myHandler.base_url + '">Retry</a>')
             myHandler.stop_server = 2
+
+        elif self.path == "/haha":
+            self.__set_Header(200)
+            self.__set_Body('<a href="' + myHandler.base_url + '">Retry</a>')
+
         else:
             if ujlib.FileExists(myHandler.base_directory + self.path):
                 if self.path.find(".sod") > 0:
                     # hod 의 처리
                     response = io.FileIO(myHandler.base_directory + self.path)
+
                 else:
                     # 일반 파일들
                     response = io.FileIO(myHandler.base_directory + self.path)
@@ -91,16 +96,17 @@ class myHandler(BaseHTTPRequestHandler):
 
                 self.wfile.write(response.read())
             else:
-                self.__set_Header(403)
+                self.send_error(403, "File not found!!", myHandler.base_url + self.path)
 
             # GET 방식의 파라미터의 data 값을 취득한다.
             # data = self.__get_Parameter('data')
             # response(응답)할 body내용이다.
 
     # POST 형식의 request일 때 호출된다.
-
     def do_POST(self):
         # response header code는 200(정상)으로 응답한다.
         self.__set_Header(200)
         # response body는 form으로 받은 test의 값으로 응답한다.
-        self.__set_Body(self.__get_Post_Parameter('test'))
+        # {'testtext[]': ['fdsg', 'fdg'], 'testt': ['dsfgdfghs']}
+        self.__set_Body(self.__get_Post_Parameter('testtext[]',1))
+        print(self.__post_param)

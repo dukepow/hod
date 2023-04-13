@@ -1,6 +1,6 @@
 <head>
 <title>TG dukepow HomePage<!@title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -10,7 +10,7 @@ body {
 }
 -->
 </style>
-<link href="../style.css" rel="stylesheet" type="text/css">
+<link href="./style.css" rel="stylesheet" type="text/css">
 <!@java_board>
 </head>
 
@@ -57,7 +57,7 @@ body {
                           <tr> 
                             <td height="124"> 
                               <div align="center">
-                             <!@B_CLASS src=»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯|»∏ø¯>
+                             <!@B_CLASS src=ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê|ÌöåÏõê>
                              <br>
                               <#B_MEMICON width=100&height=100><br><!@B_YP>
                               <br><!@B_WRITERLINK type=id&linkheight=16&skin=reefmind></div>
@@ -96,15 +96,15 @@ body {
                       <!@IFOPEN session_board==1>
           				<#B_WRITEIP>
           			<!@IFCLOSE>
-          			<b>&nbsp;&nbsp;√∑∫Œ∆ƒ¿œ : <!@B_DOWNLOAD></b><br></td>
+          			<b>&nbsp;&nbsp;Ï≤®Î∂ÄÌååÏùº : <!@B_DOWNLOAD></b><br></td>
                       <td align="right"> 
                         <table width="100" border="0" cellspacing="0" cellpadding="0">
                           <tr>
                             <td><!@B_DEL type=prompt&src=b_img/del.jpg&guest=yes></td>
                             <td align=right><!@B_EDIT link=board_cedit.sod&src=b_img/modefy.gif&guest=yes></td>
                           </tr>
-                        </table><br>¿Ã¿¸±€: <!@b_titleaback link=board_view.sod>
-						<br>¥Ÿ¿Ω±€: <!@b_titleanext link=board_view.sod>
+                        </table><br>Ïù¥Ï†ÑÍ∏Ä: <!@b_titleaback link=board_view.sod>
+						<br>Îã§ÏùåÍ∏Ä: <!@b_titleanext link=board_view.sod>
                       </td>
                     </tr>
                   </table>

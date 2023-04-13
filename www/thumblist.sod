@@ -1,6 +1,6 @@
 <head>
 <title>TG dukepow HomePage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 body {
@@ -10,7 +10,7 @@ body {
 }
 -->
 </style>
-<link href="../style.css" rel="stylesheet" type="text/css">
+<link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@ body {
   <tr>
     <td>
       
-      <!@THUMB_START dir=j:\dukepow\2010_source\hod\내그림&mask=*.jpg|*.gif|*.jpeg|*.png>
+      <!@THUMB_START dir=j:\dukepow\2010_source\hod\�궡洹몃┝&mask=*.jpg|*.gif|*.jpeg|*.png>
       <table width="800" border="0" cellspacing="1" cellpadding="0">
       <!@THUMB_TROPEN trsize=5&bgcolor=#FFFFFF|#E9EEF2>
         <tr bgcolor="<!@THUMB_BGCOLOR>"> 
