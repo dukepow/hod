@@ -3,6 +3,9 @@ import io
 import urllib.parse as urlparse
 import mod.common as mcom
 import mod.UJlib as ujlib
+from mod import ufunct
+from mod import utemple_lib
+# import mod.ufunct as user
 
 
 class myHandler(BaseHTTPRequestHandler):
@@ -57,6 +60,36 @@ class myHandler(BaseHTTPRequestHandler):
         # data(string)를 byte형식으로 변환해서 응답한다.
         self.wfile.write(bytes(data.encode('utf-8')) if data else b"Hello" )
 
+    def __manager(self):
+        if ujlib.FileExists(myHandler.base_directory + self.path):
+            # if self.path.find(".sod") > 0:
+            if ".sod" in self.path:
+                
+                # 모든 폼데이터 및 사용 데이터를 보관하고 관리
+                user = ufunct.Tuser()
+                if hasattr(self, "_myHandler__param") :
+                    user.fcFormDataAddStrings(self.__param)
+                if hasattr(self, "_myHandler__post_param") :
+                    user.fcFormDataAddStrings(self.__post_param)
+                rs = io.FileIO(myHandler.base_directory + self.path)
+                user.zRootHtml = rs.readlines()
+
+                # print(user.fcf('testt'))
+                
+                # TODO: hod 의 처리
+                self.__set_Header(200, mcom.get_mimetype(self.path))
+                self.wfile.write(user.fcOutHtml())
+
+            else:
+                # 일반 파일들
+                response = io.FileIO(myHandler.base_directory + self.path)
+            
+                self.__set_Header(200, mcom.get_mimetype(self.path))
+
+                self.wfile.write(response.read())
+        else:
+            self.send_error(403, "File not found!!", myHandler.base_url + self.path)
+
     # get 형식의 request일 때 호출된다.
     def do_GET(self):
         # print(self.headers)
@@ -83,20 +116,11 @@ class myHandler(BaseHTTPRequestHandler):
             self.__set_Body('<a href="' + myHandler.base_url + '">Retry</a>')
 
         else:
-            if ujlib.FileExists(myHandler.base_directory + self.path):
-                if self.path.find(".sod") > 0:
-                    # hod 의 처리
-                    response = io.FileIO(myHandler.base_directory + self.path)
-
-                else:
-                    # 일반 파일들
-                    response = io.FileIO(myHandler.base_directory + self.path)
-
-                self.__set_Header(200, mcom.get_mimetype(self.path))
-
-                self.wfile.write(response.read())
-            else:
-                self.send_error(403, "File not found!!", myHandler.base_url + self.path)
+            if hasattr(self, "_myHandler__param") == False:
+                self.__get_Parameter('sid')  # 그냥 아무거나 읽어서  __param 을 만듬
+                
+            
+            self.__manager()
 
             # GET 방식의 파라미터의 data 값을 취득한다.
             # data = self.__get_Parameter('data')
@@ -104,9 +128,17 @@ class myHandler(BaseHTTPRequestHandler):
 
     # POST 형식의 request일 때 호출된다.
     def do_POST(self):
-        # response header code는 200(정상)으로 응답한다.
-        self.__set_Header(200)
-        # response body는 form으로 받은 test의 값으로 응답한다.
-        # {'testtext[]': ['fdsg', 'fdg'], 'testt': ['dsfgdfghs']}
-        self.__set_Body(self.__get_Post_Parameter('testtext[]',1))
-        print(self.__post_param)
+        if hasattr(self, "_myHandler__post_param") == False:
+        # if self.b_post_requested == True:
+            self.__get_Post_Parameter('sid')  # 그냥 아무거나 읽어서  __param 을 만듬
+            
+        self.__manager()
+
+    
+
+    #     # response header code는 200(정상)으로 응답한다.
+    #     self.__set_Header(200)
+    #     # response body는 form으로 받은 test의 값으로 응답한다.
+    #     # {'testtext[]': ['fdsg', 'fdg'], 'testt': ['dsfgdfghs']}
+    #     self.__set_Body(self.__get_Post_Parameter('testtext[]',1))
+    #     print(self.__post_param)

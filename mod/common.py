@@ -34,8 +34,11 @@ def get_mimetype(url):
     """
     filename = url.split('?')[0]
     filename = filename.split('#')[0]
-    content_type, encoding = mimetypes.guess_type(filename)
-    return url, content_type
+    if ".sod" in filename:
+        content_type = 'text/html'
+    else:
+        content_type, encoding = mimetypes.guess_type(filename)
+    return content_type
 
 
 def URLDownloadToFile(url, file=None):
